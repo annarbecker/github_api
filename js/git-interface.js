@@ -20,7 +20,7 @@ exports.getUsername = function(){
 
 exports.getRepos = function(){
   var username = $('#username').val();
-  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(repos){
+  $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey + '&per_page=1000&sort=updated').then(function(repos){
     console.log(repos);
     console.log(repos.length);
     $('.repo-results').append("<tr><th>Repository</th><th>Description</th><th>Date Created</th></tr>");
