@@ -9,29 +9,34 @@
 
 ## Setup/Installation Requirements
 
-Clone this repository.
+Clone this repository. Open terminal and:
+
 ```
 $ cd ~/Desktop
 $ git clone https://github.com/annarbecker/github_api.git
 $ cd github_api
 ```
 
-Open terminal and:
-
-* install Node tools
+Install Node tools
 ```
 $ npm init
 $ npm install
 ```
-* install Bower tools
+Install Bower tools
 ```
 $ bower init
 $ bower install
 ```
 
-* install SASS
+Install SASS
 ```
 $ gem install sass
+```
+
+To view in browser
+```
+$ gulp build
+$ gulp serve
 ```
 
 ## Technologies Used
