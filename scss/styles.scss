@@ -1,12 +1,13 @@
 $teal : #23B5AF;
 $darkTeal : #0A6865;
+$gray : #eee;
 
 body {
   font-family: 'Open Sans', sans-serif;
   p {
     margin: 0px;
   }
-  background-color: #eee;
+  background-color: $gray;
 }
 
 .jumbotron {
@@ -21,6 +22,11 @@ body {
 #find-btn {
   color: white;
   background-color: $teal;
+}
+
+#find-btn:hover {
+  color: white;
+  background-color: $darkTeal;
 }
 
 #username {
@@ -51,7 +57,7 @@ table {
 }
 
 table#t01 tr:nth-child(even) {
-  background-color: #eee;
+  background-color: $gray;
 }
 table#t01 tr:nth-child(odd) {
   background-color: white;
@@ -62,5 +68,8 @@ table#t01 th {
 }
 
 a {
+  color: $teal;
+}
+a:hover {
   color: $darkTeal;
 }
