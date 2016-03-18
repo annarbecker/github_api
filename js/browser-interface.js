@@ -9,6 +9,6 @@ $(document).ready(function() {
    getUsername();
    getRepos();
    $('.username-results').empty();
-   $('.repo-results2').empty();
+   $('.repo-results').empty();
   });
 });
