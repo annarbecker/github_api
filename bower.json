@@ -1,10 +1,10 @@
 {
-  "name": "javascript-skeleton",
+  "name": "github_api",
   "description": "template",
   "main": "gulpfile.js",
   "license": "ISC",
   "moduleType": [],
-  "homepage": "",
+  "homepage": "https://github.com/annarbecker/github_api",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,5 +16,8 @@
     "jquery": "^2.2.1",
     "bootstrap": "^3.3.6",
     "moment": "^2.12.0"
-  }
+  },
+  "authors": [
+    "Anna Becker <anna.r.becker@gmail.com>"
+  ]
 }
