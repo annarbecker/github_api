@@ -1,11 +1,16 @@
+$teal : #23B5AF;
+$darkTeal : #0A6865;
+
 body {
   font-family: 'Open Sans', sans-serif;
   p {
     margin: 0px;
   }
+  background-color: #eee;
 }
 
 .jumbotron {
+  background-color: white;
   padding-top: 20px;
   margin-bottom: 30px;
   h1 {
@@ -13,9 +18,26 @@ body {
   }
 }
 
+#find-btn {
+  color: white;
+  background-color: $teal;
+}
+
+#username {
+  width: 30%;
+}
+
 img {
   height: 100px;
   padding-bottom: 10px;
+  border-radius: 5px;
+}
+
+.username-results {
+  background-color: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 table {
@@ -32,9 +54,13 @@ table#t01 tr:nth-child(even) {
   background-color: #eee;
 }
 table#t01 tr:nth-child(odd) {
-  background-color: #fff;
+  background-color: white;
 }
 table#t01 th {
   color: white;
-  background-color: black;
+  background-color: $darkTeal;
+}
+
+a {
+  color: $darkTeal;
 }
