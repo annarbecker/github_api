@@ -5,12 +5,14 @@ exports.getUsername = function(){
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
     console.log(response);
     $('.username-results').append('<h1>' + username + '</h1>');
-    $('.username-results').append("<img src='" + response.avatar_url + "'><br>");
+    $('.username-results').append("<img src='" + response.avatar_url + "'>");
     if(response.name != null) {
       $('.username-results').append('<strong><p>Name: </strong>' + response.name + '</p>');
     };
-    $('.username-results').append("<a href='" + response.email + "'>Email " + username + "</a>");
-    $('.username-results').append('<strong><p>Followers: </strong>' + response.followers + '</p>');
+    if(response.email != null) {
+      $('.username-results').append("<a href='mailto:" + response.email + "'>Email " + username + "</a>");
+    }
+    $('.username-results').append('<strong><p>Followers: </strong>' + response.followers + '</p><br>');
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });

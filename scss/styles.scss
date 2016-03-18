@@ -1,7 +1,23 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+  padding-top: 20px;
+  margin-bottom: 30px;
+  h1 {
+    font-family: monospace;
+  }
+}
+
+img {
+  height: 100px;
+  padding-bottom: 10px;
+}
+
 table {
   width: 100%;
   th {
-    border-bottom: 1px solid lightgray;
     padding: 10px;
   }
   td {
@@ -10,16 +26,12 @@ table {
 }
 
 table#t01 tr:nth-child(even) {
-    background-color: #eee;
+  background-color: #eee;
 }
 table#t01 tr:nth-child(odd) {
-    background-color: #fff;
+  background-color: #fff;
 }
 table#t01 th {
-    color: white;
-    background-color: black;
-}
-
-img {
-  height: 100px;
+  color: white;
+  background-color: black;
 }
