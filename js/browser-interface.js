@@ -8,5 +8,7 @@ $(document).ready(function() {
    var username = $('#username').val();
    getUsername();
    getRepos();
+   $('.username-results').empty();
+   $('.repo-results2').empty();
   });
 });
