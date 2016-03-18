@@ -1,6 +1,6 @@
 var apiKey = require('./../.env').apiKey;
-var getUsername = require('./../js/username-interface.js').getUsername;
-var getRepos = require('./../js/repos-interface.js').getRepos;
+var getUsername = require('./../js/git-interface.js').getUsername;
+var getRepos = require('./../js/git-interface.js').getRepos;
 
 $(document).ready(function() {
  $('#find-git').submit(function(event) {
